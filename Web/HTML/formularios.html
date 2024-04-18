@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="" method="get" enctype="text/plain">
+        <div>
+            <label for="nombre">Nombre: </label>
+        </div>
+        
+        <div>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"/>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+        <div>
+            <input type="submit" value="Enviar formulario"/>
+        </div>
+        <fieldset>
+            <legend>Informacion</legend>
+            <label for="descripcion">Descripcion</label>
+            <br>
+            <textarea name="desc" id="descripcion" cols="30" rows="10"></textarea>
+        </fieldset>
+        <div>
+            Sexo: 
+            <input type="radio" name="sexo" id="masc" value="hombre"/>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem" value="mujer"/>
+            <label for="fem">Femenino</label>
+        </div>
+        <div>
+            Categoría económica:
+            <input type="checkbox">Alta
+            <input type="checkbox">Media
+            <input type="checkbox">Baja
+        </div>
+        <div>
+            Color de casa:
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            Fecha:
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            Imagen:
+            <div>
+                <input type="image" src="IMAGENES/2023-07-23_13.01.13.png" alt="Imagen" width="299px"/>    
+            </div>
+        </div>
+        <div>
+            <input type="number" name="" id="">
+        </div>
+        <div>
+            <input type="range" name="" id="">
+        </div>
+        <div>
+            Buscar:
+            <input type="search" name="busqueda" id="busqueda">
+        </div>
+        <div>
+            <input type="reset" value="Refrescar">
+        </div>
+        <div>
+            <label for="tel">Telefono: </label>
+            <input type="tel" name="telefono" id="tel">
+
+        </div>
+        <div>
+            Hora:
+            <input type="time" name="hora" id="">
+        </div>
+        <div>
+            Progreso:
+            <progress max="100" value="45"></progress>
+        </div>
+        <div>
+            Meter
+            <meter max="100" value="60"></meter>
+        </div>
+        <div>
+            lista de datos
+            <input name="frutas" list="frutas"/>
+            <datalist id="frutas">
+                <option value="manzana"></option>
+                <option value="pera"></option>
+                <option value="platano"></option>
+            </datalist>
+        </div>
+
+    </form>
+    <div>
+        <form action="">
+            <h1>Nuevo formulario</h1>
+            <label for="nombre">Nombre: </label>
+            <input type="text" required id="nombre" placeholder="Escribe tu nombre">
+            <input type="submit" value="Enviar">
+            <div>
+                <label for="dni">DNI: </label>
+                <input type="text" required 
+                maxlength="8"
+                mixlength="8"
+                pattern="[1-9]">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

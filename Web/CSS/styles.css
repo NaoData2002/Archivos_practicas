@@ -1,0 +1,66 @@
+/*Selector universal*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+body{
+    background-color: lightgray;
+}
+/*Selector de etiqueta*/
+h1 {
+    border: 3px solid white;
+    font-size: 100px;
+    text-decoration: underline;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+h2 {
+    color: green;
+}
+li {
+    color: blue;
+}
+div h2{
+    text-decoration: underline;
+}
+/*Selector de id*/
+#descripcion{
+    border: 5px solid black;
+    padding: 15px;
+}
+/*Selector de clase*/
+.lista{
+    background: lightcoral;
+    border: 3px solid black;
+}
+
+
+/*Selector de atributo*/
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#usuario form *{
+    display: block;
+}
+
+input [type="text"]{
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 300px;
+}
+
+input[type="submit"]{
+    background: green;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
